@@ -1,0 +1,227 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    color: black;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.mainLayout{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-x: hidden;
+}
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+.content_main{
+    width: 100%;
+    height: auto;
+}
+/*background*/
+.SwiperSilder{
+    width: 100%;
+}
+.mySlides{
+    height: 25%;
+}
+
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+/*danh muc*/
+.category_content{
+    padding: 0 16px;
+    margin: 1em auto;
+    display: flex;
+    max-width: 900px;
+    min-height: 150px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(196, 196, 196);
+}
+.category{
+    width: 90px;
+    height: 90px;
+    margin: 2em;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgb(242, 242, 242);
+    border-radius: 100px;
+    transition-property: transform;
+}
+.item_category{
+    position: relative;
+    max-width: 90px;
+    max-height: 88px;
+    align-items: center;
+    display: flex;
+    background-color: antiquewhite;
+    flex-direction: column;
+    border-radius: 50%;
+}
+.img_category{
+    height: 70px;
+    width: 40px;
+    padding: 1px 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color .3s;
+}
+.img_category span a img{
+    max-width: 70px;
+    max-height: 70px;
+    width: 70px;
+}
+.item_category span {
+    margin-top: 25px;
+}
+.category:hover{
+    border-color: red;
+    box-shadow: 0 0 5px rgb(196, 196, 196);
+}
+
+/*product*/
+/*.product_listBox{
+    display: flex;
+}*/
+.productBox {
+    width: 100%;
+    height:auto;
+}
+.swiper-wrapper{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    margin-top: 2em;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+.container_product {
+    position: relative;
+    padding: 0 6em;
+    margin: 0 auto;
+}
+.productBanner{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.productBanner img{
+    width: 100%;
+    height: 100%;
+}
+
+.product_tittle{
+    margin-top: 1em;
+    text-align: center;
+}
+/**/
+.bestsale{
+    position: relative;
+    display: grid;
+    height: auto;
+}
+.imgbestsale{
+    width: 50%;
+    margin-right: 20px;
+    margin-left: 60px;
+}
+
+.bestsale a img{
+    width: 100%;
+    height: 100%;
+}
+/**/
+.product_col{
+    width: 100%;
+    margin:0;
+}
+.product_item{
+    width: 20.7%;
+    height: auto;
+    float: left;
+    margin-right: 25px;
+    margin-left: 25px;
+    text-align: center;
+    border:  1px solid #f1f1f1;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.product_img{
+    width: 100%;
+    height: 300;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.product_img a img{
+    border-radius: 20px;
+    height: 100%;
+    object-fit: contain;
+    transform: translateZ(1px);
+    image-rendering: auto;
+    transition: transform .3s,border-radius .3s;
+}
+.product_text{
+    width: 100%;
+    height: auto;
+}
+.product_front{
+    position: relative;
+    text-align: center;
+    margin: 0;
+}
+.product_front h4{
+    margin: 0;
+}
+.product_text p{
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+} 
+.button_buy{
+    width: 19em;
+    height: auto;
+}
+.buynow{
+    margin-top: 10px;
+    height: 50px;
+    text-align: center;
+}
+.buynow #addcart{
+    position: relative;
+    height: 40px;
+    width: 110px;
+    color: red;
+    background-color: #ffffff;
+    font-size: 18px;
+    border: 1px solid red;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(196, 196, 196);
+}
+.buynow #buy_now{
+    position: relative;
+    height: 40px;
+    width: 80px;
+    color: red;
+    background-color: #ffffff;
+    font-size: 18px;
+    border: 1px solid red;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(196, 196, 196);
+}

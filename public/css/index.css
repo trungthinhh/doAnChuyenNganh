@@ -1,0 +1,213 @@
+﻿body {
+	background: url(../images/index_bg.jpg) repeat #E2EDFE;
+	font-size:14px;
+	font-family:Arial;
+}
+.input_220
+{
+	width:220px;
+}
+.c1
+{
+	width: 190px; text-align: right;
+}
+li
+{
+	font-size:12px;
+}
+.btn_tracuu
+{
+	width:100px;
+	height:27px;
+	background:url(../images/index_button_tracuu.png);
+	border:none;
+}
+.btn_tracuu:hover
+{
+	cursor: pointer;
+	background:url(../images/index_button_tracuu_hv.png);
+	
+}
+.btn_lamlai
+{
+	width:100px;
+	height:27px;
+	background:url(../images/index_button_lamlai.png);
+	border:none;
+}
+.btn_lamlai:hover
+{
+	width:100px;
+	height:27px;
+	background:url(../images/index_button_lamlai_hv.png);
+	border:none;
+    cursor: pointer;
+}
+#wrapper {
+	width:1008px;
+	margin:-5px auto;
+	
+}
+#header{
+	
+	width:1008px;
+	height:107px;
+	float:left;
+	position:relative;
+	margin-left:0px;
+	}
+#left {
+	width:284px;
+	float:left;
+	position:relative;
+}
+#left_top
+{	width:100%;
+	background:url(../images/index_left_top.png);
+	height:19px;
+	position:relative;
+}
+#left_mid {
+ width::100%;
+	background:url(../images/index_left_mid.png) repeat-y;
+	
+	height:506px;
+}
+.left_menu_item
+{
+	width:250px;
+	height:67px;
+	
+	padding:9px;
+	
+	
+	
+	
+}
+fieldset
+{
+	color:#036;
+	border:1px solid #CCC;
+	
+}
+legend
+{
+	color:#003;
+	font-size:16px;
+	font-weight:bold;
+}
+#noidunght
+{
+	margin-left:30px;
+}
+
+#left_bottom {
+ width:100%;
+	background:url(../images/index_left_bottom.png);
+	height:32px;
+	position:relative;
+}
+#right {
+	width:724px;
+	float:right;
+	position:relative;
+}
+#right_top
+{
+	width:100%;
+	background:url(../images/index_right_top.png);
+	height:19px;
+	position:relative;
+}
+
+#right_mid {
+ width::100%;
+	background:url(../images/index_right_mid.png);
+	position:relative;
+	height:506px;
+}
+#right_bottom {
+ width::100%;
+	background:url(../images/index_right_bottom.png);
+	position:relative;
+	height:32px;
+}
+#login_panel {
+	float:left;
+	width:500px;
+	height:333px;
+	background:url(../images/bg2.png) no-repeat;
+	margin:50px auto;
+	text-align:center;
+}
+.login-inp {
+	color: #000;
+	font-size: 16px;
+	height: 28px;
+	padding: 6px 6px 0 10px;
+	width: 204px;
+}
+a.forgot-pwd {
+	color: #161616;
+	font-family: Tahoma;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 12px;
+}
+a:hover.forgot-pwd {
+	color:#06f;
+}
+.button:hover {
+	cursor:pointer;
+	color:#FF6600;
+}
+.button {
+	width:117px;
+	height:32px;
+	font-size:12px;
+	font-weight:bold;
+	color:#fff;
+	border:none;
+	background:url(../images/login_button.png);
+}
+.button img {
+	float:left;
+	width:33px;
+	height:33px;
+}
+.button.green {
+}
+.button.green:hover {
+	background: -webkit-linear-gradient(top, rgba(170,212,150,1) 0%, rgba(116,185,49,1) 90%, rgba(106,173,45,1) 95%, rgba(96,157,41,1) 100%);
+	background: -moz-linear-gradient(top, rgba(170,212,150,1) 0%, rgba(116,185,49,1) 90%, rgba(106,173,45,1) 95%, rgba(96,157,41,1) 100%);
+	background: -o-linear-gradient(top, rgba(170,212,150,1) 0%, rgba(116,185,49,1) 90%, rgba(106,173,45,1) 95%, rgba(96,157,41,1) 100%);
+	background: -ms-linear-gradient(top, rgba(170,212,150,1) 0%, rgba(116,185,49,1) 90%, rgba(106,173,45,1) 95%, rgba(96,157,41,1) 100%);
+	background: linear-gradient(top, rgba(170,212,150,1) 0%, rgba(116,185,49,1) 90%, rgba(106,173,45,1) 95%, rgba(96,157,41,1) 100%);
+	cursor:pointer;
+}
+table
+{border-collapse: collapse;}
+table * th {
+    /** background: buttonface none repeat scroll 0 0;  **/
+font-size:12px;
+    border: #CCCCCC solid 1px;
+    font-weight:bold;
+    text-align: center;
+    background-color: #486CAE;
+	
+    color: #ffffff;
+}
+table * tr.row0 {
+
+	background-color: #F7F7F7;
+}
+table * tr.row1 {
+
+	background-color: #FFFFFF;
+}
+table * td {
+font-size:12px;
+	border: #CCCCCC solid 1px;
+	text-indent:3px;
+	
+}
