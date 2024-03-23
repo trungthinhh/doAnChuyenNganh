@@ -21,11 +21,29 @@ class giohang_Controller extends Controller {
             $this->getView()->render('giohang', $viewData);
     }
     public function XoaGiohang() {
-        
         $MaG = get_post_var('MaG');
         echo "đã xóa thành công";
-        return $this->model->getxoaSanpham($MaG);
-        
+        return $this->model->getxoaSanpham($MaG);      
+    }
+    public function CapNhatGiohang() {
+        $MaG = get_post_var('MaG');
+        $soluong = get_post_var('soluong');
+        if($soluong >0){
+            echo 1;
         }
+        else{
+            echo 0;
+        }
+        return $this->model->getCapNhatSanpham($MaG,$soluong);      
+    }
+    public function Order(){
+        if(!isset($_SESSION['username'])){
+         echo 0;
+        }
+        else{
+         echo 1; 
+        }
+    }
+ 
 }
 ?>

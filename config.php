@@ -19,7 +19,7 @@ define('SESSION_PREFIX', 'WebSession');
 
 //Database
 define('DATABASE_USER', 'root');
-define('DATABASE_PASS', 'thinh1234');
+define('DATABASE_PASS', 'Uyen123');
 define('DATABASE_NAME', 'ql_banhang');
-define('SERVICE_NAME', 'localhost:3307');
+define('SERVICE_NAME', 'localhost');
 define('DATABASE_TYPE', 'MYSQL'); // MSSQL or MYSQL

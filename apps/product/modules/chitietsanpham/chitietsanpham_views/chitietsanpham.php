@@ -23,7 +23,6 @@
 </head>
 <body>
 <?php $this->template->display('header.php'); ?>
-
 <div class="mainLayout">
     <div class="productDetail">
         <div class="container_main">
@@ -34,34 +33,21 @@
                     foreach($products as $pro){
                 ?>
                 <input type="hidden" id="tenSP" value="<?php echo $pro['TenSP']; ?>"><!--gọi TenSP trong sql ra (TenSP) phải trùng khớp với TenSP trong table sanpham-->
-                    <input type="hidden" id="gia" value="<?php echo $pro['GIA']; ?>">
+                <input type="hidden" id="gia" value="<?php echo $pro['GIA']; ?>">
+                <input type="hidden" id="Hinh" value="<?php echo $pro['img']; ?>">
+
                     
                 <div class="productdetail_gallery">
                     <div class="product-gallery">
-                        <!-- <div class="swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="slide-item">
-                                        <span>
-                                            <img src="<?php echo SITE_ROOT_IMG.$pro['Hinh1'];?>" alt="">
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="slide-item">
-                                        <span>
-                                            <img src="<?php echo SITE_ROOT_IMG.$pro['Hinh2'];?>" alt="">
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
+                        
                         <div class="swiper swiper-img">
-                            <div class="swiperimg-wrapper">
+                            <div class="swiperimg-wrapper" >
                                 
                                 <span>
-                                    <img src="<?php echo SITE_ROOT_IMG.$pro['img'];?>" alt="">
+                                    <img  src="<?php echo SITE_ROOT_IMG.$pro['img'];?>" alt="">
+                                    
                                 </span>
+                                
                             </div>
                         </div>
                     </div>
@@ -119,13 +105,6 @@
                                                 <li style="font-size:19px">Thiết kế bộ tem mới phong cách đầy ấn tượng trên xe giúp bạn thể hiện sự trẻ trung, năng động, thu hút mọi ánh nhìn</li>
                                             </ul>
                                         </li></br>
-                                        <!-- <li style="font-size:20px">2. CÁCH CHỌN SIZE
-                                            <ul type="circle">
-                                                <li style="font-size:19px"> Size: S|Cân nặng: 40 - 48 kg|Eo: 60 - 68 cm</li>
-                                                <li style="font-size:19px"> Size: M|Cân nặng: 48 - 55 kg|Eo: 68 - 73 cm</li>
-                                                <li style="font-size:19px"> Size: L|Cân nặng: 55 - 65 kg|Eo: 73 - 80 cm</li>
-                                            </ul>
-                                        </li> -->
                                     </ol>
                                 </div>
                             </div>
@@ -135,159 +114,14 @@
                 </div>
                 <?php }} ?>
             </div>
-            <!-- <div class="ProductShow">
-                <div class="ProductRelated">
-                    <div class="ProductRelated_Box">
-                        <div class="ProductRelated_Tittle">
-                            <h3>Gợi ý</h3>
-                        </div>
-                        <div class="ProductShow_Body">
-                            <div class="ProductShow_Show">
-                                <div class="product_column">
-                                    <div class="productitem">
-                                        <div class="productimg">
-                                            <a href="#">
-                                                <img src="<?php echo SITE_ROOT_IMG;?>tttl/img/wave-alpha.png" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="product_text">
-                                            <div class="product_front">
-                                                <h3>Hoda Wave Alpha</h3>
-                                            </div>
-                                            <p>2560000đ</p>
-                                        </div>
-                                        <div class="button_buy">
-                                            <div class="buynow">
-                                                <button id="addcart" type="button">Thêm vào giỏ</button>
-                                                <button id="buy_now" type="button">Mua ngay</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product_column">
-                                    <div class="productitem">
-                                        <div class="productimg">
-                                            <a href="#">
-                                                <img src="<?php echo SITE_ROOT_IMG;?>tttl/img/sh125i.png" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="product_text">
-                                            <div class="product_front">
-                                                <h3>Honda SH125i</h3>
-                                            </div>
-                                            <p>72.650.000đ</p>
-                                        </div>
-                                        <div class="button_buy">
-                                            <div class="buynow">
-                                                <button id="addcart" type="button">Thêm vào giỏ</button>
-                                                <button id="buy_now" type="button">Mua ngay</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product_column">
-                                    <div class="productitem">
-                                        <div class="productimg">
-                                            <a href="#">
-                                                <img src="<?php echo SITE_ROOT_IMG;?>tttl/img/AB.png" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="product_text">
-                                            <div class="product_front">
-                                                <h3>Honda Air Blade 125</h3>
-                                            </div>
-                                            <p>45.000.000đ</p>
-                                        </div>
-                                        <div class="button_buy">
-                                            <div class="buynow">
-                                                <button id="addcart" type="button">Thêm vào giỏ</button>
-                                                <button id="buy_now" type="button">Mua ngay</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product_column">
-                                    <div class="productitem">
-                                        <div class="productimg">
-                                            <a href="#">
-                                                <img src="<?php echo SITE_ROOT_IMG;?>tttl/img/Piaggio-Medley.png" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="product_text">
-                                            <div class="product_front">
-                                                <h3>Piaggio Medley</h3>
-                                            </div>
-                                            <p>70.000.000đ</p>
-                                        </div>
-                                        <div class="button_buy">
-                                            <div class="buynow">
-                                                <button id="addcart" type="button">Thêm vào giỏ</button>
-                                                <button id="buy_now" type="button">Mua ngay</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product_column">
-                                    <div class="productitem">
-                                        <div class="productimg">
-                                            <a href="#">
-                                                <img src="<?php echo SITE_ROOT_IMG;?>tttl/img/Piaggo-Vespa-S.png" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="product_text">
-                                            <div class="product_front">
-                                                <h3>Vespa 125i</h3>
-                                            </div>
-                                            <p>90.000.000đ</p>
-                                        </div>
-                                        <div class="button_buy">
-                                            <div class="buynow">
-                                                <button id="addcart" type="button">Thêm vào giỏ</button>
-                                                <button id="buy_now" type="button">Mua ngay</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product_column">
-                                    <div class="productitem">
-                                        <div class="productimg">
-                                            <a href="#">
-                                                <img src="<?php echo SITE_ROOT_IMG;?>tttl/img/vision.png" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="product_text">
-                                            <div class="product_front">
-                                                <h3>HONDA Vision</h3>
-                                            </div>
-                                            <p>30.000.000đ</p>
-                                        </div>
-                                        <div class="button_buy">
-                                            <div class="buynow">
-                                                <button id="btn_cart" type="button">Thêm vào giỏ</button>
-                                                <button id="buy_now" type="button">Mua ngay</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
 </div>
-
+</div>
+<?php $this->template->display('footer.php'); ?>
+</body>
+</html>
 <script type = "text/javascript">
-    // function changeColor(colorName){
-    //     $('#field1').text(colorName); //jquery
-    //     $('#colorChooses').val(colorName);
-    // }
-    // function changeSize(sizeName){
-    //     $('#field2').text(sizeName);
-    //     $('#sizeChooses').val(sizeName);//lấy giá trị từ size
-    // }
-
     let amountElement=document.getElementById('amount'); 
     let amount=amountElement.value;
     
@@ -317,6 +151,7 @@
 
     //tim va so sanh sp trong gio hang
     $('#btn_cart').click(function(){//#btn_cart là id của nút thêm vào giỏ hàng
+        var Hinh = $('#Hinh').val();
         var maSP = $('#maSP').val();
         var tenSP = $('#tenSP').val();
         var amount = $('#amount').val();
@@ -325,6 +160,7 @@
         $.ajax('/product/chitietsanpham/saveCartProduct',{   
             type: 'POST',  // http method
             data: { 
+                'Hinh':Hinh,
                 'maSP': maSP,
                 'tenSP': tenSP,
                 'amount': amount,
@@ -337,7 +173,3 @@
         });
     });
 </script>
-
-<?php $this->template->display('footer.php'); ?>
-</body>
-</html>

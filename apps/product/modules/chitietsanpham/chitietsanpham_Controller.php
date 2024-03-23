@@ -31,6 +31,7 @@ class chitietsanpham_Controller extends Controller {
         }
     }
     public function saveCartProduct(){//lưu trữ sản phẩm
+        $Hinh = get_post_var('Hinh');
         $masp = get_post_var('maSP');
         $tenSP = get_post_var('tenSP');
         $amount = get_post_var('amount');
@@ -41,7 +42,7 @@ class chitietsanpham_Controller extends Controller {
         // echo  'amount:'.$amount;
         // echo  'gia:'.$gia;
             
-        return $this->model->getLuusanpham($masp,$tenSP,$amount,$gia); 
+        return $this->model->getLuusanpham($Hinh,$masp,$tenSP,$amount,$gia); 
     }
     }
 

@@ -5,9 +5,7 @@ if (!defined('SERVER_ROOT')) {
 class giohang_Model extends Model {
     public function getDanhSachSanPham(){
         //if($_SESSION['TAI_KHOAN_KH']){
-            $query = "select MaG,tenSP,soluong,gia,Makh 
-            from ql_banhang.giohang
-         order by MaG asc";
+            $query = "select Hinh,MaG,tenSP,soluong,gia,Makh from ql_banhang.giohang order by MaG asc";
         //}
         //else{
         //     $query = "select gh.MaG,tenSP,m.TenMau,sz.TenSz,soluong,gia 
@@ -18,12 +16,13 @@ class giohang_Model extends Model {
     }
     public function getxoaSanpham($MaG){
         $query = "delete from ql_banhang.giohang where MaG = '".$MaG."'";
-        //var_dump($query);
+        var_dump($query);
         return $this->qDelete($query);
-        //$abc= $this->qDelete($query);
-        //var_dump($abc);
-        //die();
-        
+    }
+    public function getCapNhatSanpham($MaG,$soluong){
+        $query = "update ql_banhang.giohang set soluong=".$soluong." where MaG='".$MaG."'";
+        //var_dump($query);
+        return $this->qUpdate($query);
     }
 }
 // select MaSP,SLSP,TenSP from ql_banhang.sanpham where MaSP='1'

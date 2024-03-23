@@ -9,10 +9,8 @@ class chitietsanpham_Model extends Model {
         return $this->qSelect($query);
     }
    
-    public function getLuusanpham($masp,$tenSP,$amount,$gia){
-        $query = "insert into ql_banhang.GIOHANG(maSP,tenSP,soluong,gia) values ('".$masp."',N'".$tenSP."','".$amount."','".$gia."')";
-        //var_dump($query);die();
-
+    public function getLuusanpham($Hinh,$masp,$tenSP,$amount,$gia){
+        $query = "insert into ql_banhang.GIOHANG(Hinh,maSP,tenSP,soluong,gia) values ('".$Hinh."','".$masp."',N'".$tenSP."','".$amount."','".$gia."')";
         return $this->qInsert($query);
     }
     //cách kiểm tra lỗi

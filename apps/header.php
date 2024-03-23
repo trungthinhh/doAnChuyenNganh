@@ -31,8 +31,8 @@
             </div>
             <div class="header_info">
                 <ul class="info_menu">
-                <li><a href="/product/kenhnguoiban">Kênh người bán</a></li>
-                    <li><a href="">TRANG CHỦ</a></li>
+                <li><a href="/product/kenhnguoiban">KÊNH NGƯỜI BÁN</a></li>
+                    <li><a href="/">TRANG CHỦ</a></li>
                     <li><a href="">SẢN PHẨM</a>
                         <div class="menu_box">
                             <ul class="menu_list_box">

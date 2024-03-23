@@ -87,6 +87,8 @@
     --bg1 : #a7a6f7;
     --bg2: #f3fcfa;
     --text: #fff;
+    --bg3 : #7d7cbd;
+    --bg4: #f3fcfa;
 }
 *{
     margin: 0;
@@ -108,9 +110,10 @@ a{
 }
 
 .form-login {
-    width:  300px;
+    width:  400px;
     height: 500px;
-    background: #fff;
+    /* background: rgb(246,225,213); */
+    background: linear-gradient(to bottom right, var(--bg1), var(--bg2));
     border-radius: 10px;
     padding: 40px 30px;
 }
@@ -126,7 +129,9 @@ a{
     margin-bottom: 30px;
     background: linear-gradient(to bottom right, var(--bg1), var(--bg2));
 }
-
+.form-login button:hover{
+    background: linear-gradient(to bottom right, var(--bg3), var(--bg4));
+}
 .form-text{
     margin-bottom: 40px;
     position: relative;

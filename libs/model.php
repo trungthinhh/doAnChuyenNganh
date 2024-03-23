@@ -274,12 +274,13 @@ class Model {
         try {
             $conn = new PDO("mysql:host=".SERVICE_NAME.";dbname=".DATABASE_NAME."", DATABASE_USER, DATABASE_PASS);
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $update = $conn->prepare($strQuery);
-            // execute the query
-            $update->execute();
+            $conn->beginTransaction();
+            $stmt = $conn->prepare($strQuery);
+            $result = $stmt->execute();
             // commit the transaction
             $conn->commit();
-            return $update->rowCount();
+            // return $update->rowCount();
+            return 1;
         } catch(PDOException $e) {
             $conn->rollback();
             echo "Error: " . $e->getMessage();

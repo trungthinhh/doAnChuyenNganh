@@ -29,7 +29,7 @@
         <from class = "form-login">
             <h1>Đăng nhập</h1>
             <div class="form-text">
-                <input type="text" id="user" value="thinh12@gmail.com">
+                <input type="text" id="user" value="thinh13@gmail.com">
                <label for="myInput">Username</label>
               
             </div>
@@ -77,7 +77,7 @@ $('#login').click(function(){ //khi nhấn vào giỏ hàng
                     // console.log(data);
                    //alert(data);
                    if(data==1){
-                    window.open("<?php echo SITE_ROOT ?>product/giohang","_self");
+                    window.open("<?php echo SITE_ROOT ?>product/dathang","_self");
                    }
                    else{
                     alert("Tài khoản hoặc mật khẩu không đúng");

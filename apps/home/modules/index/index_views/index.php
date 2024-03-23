@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -118,37 +117,36 @@
                                 <div class="product_listBox">
                                     <div class="product_swiper">
                                   
-                                        <div class="bestsale">
-                                           
-                                        
-                                            <div class="product_col">
-                                                <?php if(count($products) > 0){ 
-                                                    foreach($products as $pro){
-                                                ?>
-                                                <div class="product_item">
-                                                    <div class="product_img">
-                                                            <a href="#">
-                                                                <img src="<?php echo SITE_ROOT_IMG.$pro['img'];?>" alt="">
-                                                            </a>
-                                                        </div>
-                                                        <div class="product_text">
-                                                            <div class="product_front">
-                                                                <h4><?php echo $pro['TenSP']?></h4>
-                                                            </div>
-                                                            <p><?php echo $pro['GIA'].'đ' ?></p>
-                                                            <div class="button_buy">
-                                                                <div class="buynow">
-                                                                    <button id="addcart" type="button">Thêm vào giỏ</button>
-                                                                    <button id="buy_now" type="button">Mua ngay</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                              
-                                                   </div>
-                                                    <?php } } ?>
-                                            </div>
-                                            
+                                    <div class="ProductShow_Body">
+                            <div class="ProductShow_Show">
+                            <?php if(count($products) > 0){ 
+                                        foreach($products as $pro){
+                                    ?>
+                                <div class="product_column">                                    
+                                    <div class="productitem">
+                                        <div class="productimg">
+                                            <a href="#">
+                                                <img src="<?php echo SITE_ROOT_IMG.$pro['img'];?>" onclick="xemChiTiet('<?php echo $pro['MaSP']?>')" alt="">
+                                            </a>
                                         </div>
+                                        <div class="product_text">
+                                            <div class="product_front">
+                                                <h3><?php echo $pro['TenSP']?></h3>
+                                            </div>
+                                            <p><?php echo number_format($pro['GIA'],0).'đ' ?></p>
+                                        </div>
+                                        <!-- <div class="button_buy">
+                                            <div class="buynow">
+                                                <button id="addcart" type="button">Thêm vào giỏ</button>
+                                                <button id="buy_now" type="button">Mua ngay</button>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    
+                                </div>
+                                <?php } } ?>
+                            </div>
+                        </div>
                                    
                                     </div>
                                 </div>
@@ -157,10 +155,6 @@
                 </div>
                 </div>
                 <!---->
-                
-
-
-
             </div>
         </div>
     </div>
